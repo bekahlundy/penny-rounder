@@ -12,3 +12,8 @@ match the parent target value. Return the validated decimal variables as a list 
 5. Write code to call moneySplitter with 800.0 as the argument.
 6. BONUS: Add an extra parameter to moneySplitter called “count” that enables “total” to
 be divided among “count” people.
+
+### Test Suite
+![Passing Tests](http://i.imgur.com/q7ttRAL.png)
+
+I also created a moneySplitter(with-comments).js file with comments to explain my process. 
