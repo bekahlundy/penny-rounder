@@ -3,6 +3,14 @@ const { moneySplitter } = require('../lib/moneySplitter.js');
 
 describe('moneySplitter', () => {
 
+  it('if total = 800.0, return [266.66, 266.67, 266.67]', () => {
+    assert.deepEqual(moneySplitter(800.0, 3), [266.66, 266.67, 266.67])
+  })
+
+  it('if total = 9, return [3, 3, 3]', () => {
+    assert.deepEqual(moneySplitter(9, 3), [3, 3, 3])
+  })
+
   it('if total = 345.8, return [ 115.26, 115.27, 115.27 ]', () => {
     assert.deepEqual(moneySplitter(345.8, 3), [115.26, 115.27, 115.27])
   })
