@@ -23,4 +23,12 @@ describe('moneySplitter', () => {
     assert.deepEqual(moneySplitter(8, 4), [2, 2, 2, 2])
   })
 
+  it('if total = 45.67 and count = 4, return [ 11.41, 11.42, 11.42, 11.42 ]', () => {
+    assert.deepEqual(moneySplitter(45.67, 4), [ 11.41, 11.42, 11.42, 11.42 ])
+  })
+
+  it('if total = 100 and count = 10, return [10, 10, 10, 10, 10, 10, 10, 10, 10, 10]', () => {
+    assert.deepEqual(moneySplitter(100, 10), [10, 10, 10, 10, 10, 10, 10, 10, 10, 10])
+  })
+
 })
